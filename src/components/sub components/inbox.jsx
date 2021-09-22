@@ -1,16 +1,16 @@
 
 function InboxComponent(event){
   // console.log(event)
+  let emailObj = [];
   fetch("./emails.json")
   .then(response =>{
-    console.log(response);
-    console.log(response.ok)
+     console.log(response)
     return response.json();
   })
   .then(data =>{
-    console.log(data);
-    console.log(data.listOfEmails)
-    console.log(data.listOfEmails[0].nameOfSender)
+    //use forEach method because we don't need to return any value.
+    //we just need the function to execute for each item in array to push to emailObj
+    console.log(data)
   })
 }
 

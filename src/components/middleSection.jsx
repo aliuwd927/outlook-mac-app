@@ -1,5 +1,10 @@
+
+
 function MiddleSection(){
-  return <div className="middle_section_Container">Middle Section</div>
+  return (
+  <div className="middle_section_Container">
+  </div>
+  )
 }
 
 export default MiddleSection;

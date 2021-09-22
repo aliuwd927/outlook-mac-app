@@ -1,5 +1,4 @@
-{
-  "listOfEmails":[
+[
     { 
       "profilepicture":"",
       "nameOfSender":"Kairon Shea",
@@ -57,4 +56,3 @@
       "isAttachment":""
     }
   ]
-}
