@@ -1,17 +1,13 @@
+import { emailObjects } from "./emailObject";
 
-function InboxComponent(event){
-  // console.log(event)
-  let emailObj = [];
-  fetch("./emails.json")
-  .then(response =>{
-     console.log(response)
-    return response.json();
-  })
-  .then(data =>{
-    //use forEach method because we don't need to return any value.
-    //we just need the function to execute for each item in array to push to emailObj
-    console.log(data)
-  })
+function InboxComponent(){
+return(
+  <tr>
+      {emailObjects.map((element,index) =>(
+        <td key={index}>{element.nameOfSender}</td>
+      ))}
+  </tr>
+)
 }
 
 export default InboxComponent;
