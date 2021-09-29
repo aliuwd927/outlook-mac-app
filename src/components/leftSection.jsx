@@ -1,6 +1,5 @@
 import { useState } from "react/cjs/react.development";
-import InboxComponent from "./sub components/inbox";
-
+import MiddleSection from "./middleSection";
 
 function LeftSection(){
   const [show, setShow] = useState(false);
@@ -17,7 +16,7 @@ function LeftSection(){
     {/* {inline style online 9, however instead we used tenery operator to display either block or none.
           to do that, we used hooks on line 4 to change state. Default state is set to false.} */}
     <ul className="dropdown_subMenu" style={{display: show ? 'block': 'none'}}> 
-      <hr /><a href="#inbox" onClick={InboxComponent}>Inbox</a>
+      <hr /><a href="#inbox" onClick={MiddleSection}>Inbox</a>
       <hr /><a href="#draft" >Draft</a>
       <hr /><a href="#sent">Sent</a>
       <hr /><a href="#deleted">Deleted</a>

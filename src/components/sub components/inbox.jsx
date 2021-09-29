@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { emailObjects } from "./emailObject";
 
 function InboxComponent(){
-
+console.log("test");
 return(
-  <table style={{display: "none"}}>
+  <table>
     <tbody>
       <tr>
         {emailObjects.map((element,index) =>(
