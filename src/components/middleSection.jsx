@@ -1,17 +1,11 @@
-import { emailObjects } from "./sub components/emailObject";
+import InboxComponment from "./sub components/inbox";
 
 function MiddleSection(){
 
   return (
-    <table>
-      <tbody>
-        <tr>
-          {emailObjects.map((element,index) =>(
-            <td key={index}>{element.nameOfSender}</td>
-            ))}
-        </tr>
-      </tbody>
-    </table>
+    <div className="middle_section_Container">
+      <InboxComponment name="Sarah"/>
+    </div>
   )
 }
 
