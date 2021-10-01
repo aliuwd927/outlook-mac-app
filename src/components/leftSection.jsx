@@ -1,9 +1,10 @@
 import { useState } from "react/cjs/react.development";
-import MiddleSection from "./middleSection";
+import InboxComponent from "./sub components/inbox";
 
 function LeftSection(){
   const [show, setShow] = useState(false);
-  const [collapse, setCollapse] = useState(false)
+  const [collapse, setCollapse] = useState(false);
+  const [showTable, toggleShowTable] = useState(false);
   return (
   <div className="left_section_Container">
     <a href="#all" className="dropdown_menu" onClick={()=>{
@@ -16,7 +17,7 @@ function LeftSection(){
     {/* {inline style online 9, however instead we used tenery operator to display either block or none.
           to do that, we used hooks on line 4 to change state. Default state is set to false.} */}
     <ul className="dropdown_subMenu" style={{display: show ? 'block': 'none'}}> 
-      <hr /><a href="#inbox" onClick={()=>{MiddleSection()}}>Inbox</a>
+      <hr /><a href="#inbox" onClick={()=>{InboxComponent({showTable});}}>Inbox</a>
       <hr /><a href="#draft" >Draft</a>
       <hr /><a href="#sent">Sent</a>
       <hr /><a href="#deleted">Deleted</a>
@@ -26,3 +27,22 @@ function LeftSection(){
 }
 
 export default LeftSection;
+
+
+
+/*
+Parent Component
+
+const [displayTable, toggleDisplayTable] = useState(false);
+return (
+    <...>{displayTable && <SubComponent />}<ClickableComponent toggle={toggleDisplayTable} /><...>}
+
+
+
+Clickable Component
+
+const ClickableComponent = ({ toggle }) => {
+    return(<button onClick={() => toggle(true)}>Click me to display</buttton>)
+}
+
+*/
