@@ -4,7 +4,7 @@ function MiddleSection(){
 
   return (
     <div className="middle_section_Container">
-      <InboxComponment name="Sarah"/>
+      <InboxComponment/>
     </div>
   )
 }
