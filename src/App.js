@@ -6,6 +6,7 @@ import RightSection from "./components/rightSection";
 
 function App() {
   const [showTable, toggleTable] = useState(false);
+
   return (
     <div className="App">
       <LeftSection />

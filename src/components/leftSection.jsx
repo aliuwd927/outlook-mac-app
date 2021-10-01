@@ -4,6 +4,7 @@ import InboxComponent from "./sub components/inbox";
 function LeftSection(){
   const [show, setShow] = useState(false);
   const [collapse, setCollapse] = useState(false);
+  
   return (
   <div className="left_section_Container">
     <a href="#all" className="dropdown_menu" onClick={()=>{
