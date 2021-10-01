@@ -1,10 +1,10 @@
 import InboxComponment from "./sub components/inbox";
 
-function MiddleSection(){
-
+function MiddleSection(props){
+  
   return (
     <div className="middle_section_Container">
-      <InboxComponment/>
+      <InboxComponment showTable = {props}/>
     </div>
   )
 }
