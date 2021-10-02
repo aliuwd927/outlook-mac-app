@@ -1,4 +1,3 @@
-
 import { emailObjects } from "./emailObject";
 
 function InboxComponent(props){

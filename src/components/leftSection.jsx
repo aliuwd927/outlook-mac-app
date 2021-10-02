@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development";
+import {useState} from "react"
 
 function LeftSection(props){
   const [show, setShow] = useState(false);
