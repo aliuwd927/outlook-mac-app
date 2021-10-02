@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <LeftSection />
+      <LeftSection toggleTable={toggleTable} />
       <MiddleSection showTable={showTable} />
       <RightSection />
     </div>
