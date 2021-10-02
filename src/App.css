@@ -44,3 +44,8 @@ a {
 .arrow_up::before {
   content: "\276F";
 }
+
+.table_row_data {
+  display: flex;
+  flex-direction: column;
+}
