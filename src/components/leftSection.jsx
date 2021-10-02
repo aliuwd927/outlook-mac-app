@@ -1,5 +1,4 @@
 import { useState } from "react/cjs/react.development";
-import InboxComponent from "./sub components/inbox";
 
 function LeftSection(props){
   const [show, setShow] = useState(false);
