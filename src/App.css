@@ -12,25 +12,22 @@ body {
 
 .App {
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-self: center;
+  gap: 1.25rem;
 }
 
 .left_section_Container {
-  border: 1px solid red;
   width: 10%;
 }
 
 .middle_section_Container {
-  border: 1px solid green;
   width: 30%;
 }
 
 .right_section_Container {
-  border: 1px solid blue;
   width: 60%;
 }
 
@@ -44,14 +41,19 @@ a {
 .arrow_up::before {
   content: "\276F";
 }
-
+.table_Container {
+  width: 100%;
+}
+.table_body {
+  width: 100%;
+}
 .table_row_data {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   gap: 10px;
 }
 .table_data_emailObj {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 5px;
 }
