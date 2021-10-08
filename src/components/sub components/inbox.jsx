@@ -1,7 +1,6 @@
 import { emailObjects } from "./emailObject";
 
 function InboxComponent(props){
-  console.log(props.showTable.showTable)
 return(
   <table className="table_Container"style={{display: props.showTable.showTable ? "block":"none"}}>
     <tbody className="table_body">

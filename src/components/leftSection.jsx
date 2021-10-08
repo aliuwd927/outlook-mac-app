@@ -3,7 +3,6 @@ import {useState} from "react"
 function LeftSection(props){
   const [show, setShow] = useState(false);
   const [collapse, setCollapse] = useState(false);
-  console.log(props.toggleTable)
   return (
   <div className="left_section_Container">
     <a href="#all" className="dropdown_menu" onClick={()=>{
