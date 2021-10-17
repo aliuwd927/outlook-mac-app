@@ -6,13 +6,13 @@ import RightSection from "./components/rightSection";
 
 function App() {
   const [showTable, toggleTable] = useState(false);
-  //const [showEmail, displayEmail = useState(0);
+  const [showEmail, displayEmail] = useState(0);
 
   return (
     <div className="App">
-      <LeftSection toggleTable={toggleTable} />
+      <LeftSection toggleTable={toggleTable} displayEmail={displayEmail} />
       <MiddleSection showTable={showTable} />
-      <RightSection /* Pass something here / Recv Something here */ />
+      <RightSection showEmail={showEmail} />
     </div>
   );
 }
