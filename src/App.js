@@ -3,7 +3,6 @@ import "./App.css";
 import LeftSection from "./components/leftSection";
 import MiddleSection from "./components/middleSection";
 import RightSection from "./components/rightSection";
-import InboxComponent from "./components/sub components/inbox";
 
 function App() {
   const [showTable, toggleTable] = useState(false);
