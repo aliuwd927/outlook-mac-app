@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <LeftSection toggleTable={toggleTable} />
-      <MiddleSection showTable={showTable} />
+      <MiddleSection showTable={showTable} emailClicked={emailClicked} />
       <RightSection showEmail={showEmail} />
     </div>
   );
