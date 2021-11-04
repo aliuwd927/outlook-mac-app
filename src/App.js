@@ -3,14 +3,14 @@ import "./App.css";
 import LeftSection from "./components/leftSection";
 import MiddleSection from "./components/middleSection";
 import RightSection from "./components/rightSection";
+import InboxComponent from "./components/sub components/inbox";
 
 function App() {
   const [showTable, toggleTable] = useState(false);
-  const [showEmail, displayEmail] = useState(0);
-
+  const [showEmail, emailClicked] = useState(0);
   return (
     <div className="App">
-      <LeftSection toggleTable={toggleTable} displayEmail={displayEmail} />
+      <LeftSection toggleTable={toggleTable} />
       <MiddleSection showTable={showTable} />
       <RightSection showEmail={showEmail} />
     </div>
@@ -18,3 +18,5 @@ function App() {
 }
 
 export default App;
+
+// Target rightSection from the middleSection

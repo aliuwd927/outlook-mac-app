@@ -15,10 +15,7 @@ function LeftSection(props){
     {/* {inline style online 9, however instead we used tenery operator to display either block or none.
           to do that, we used hooks on line 4 to change state. Default state is set to false.} */}
     <ul className="dropdown_subMenu" style={{display: show ? 'block': 'none'}}> 
-      <hr /><a href="#inbox" onClick={()=>{
-        props.toggleTable(true);
-        props.displayEmail(0);
-        }}>Inbox</a>
+      <hr /><a href="#inbox" onClick={()=>props.toggleTable(true)}>Inbox</a>
       <hr /><a href="#draft" >Draft</a>
       <hr /><a href="#sent">Sent</a>
       <hr /><a href="#deleted">Deleted</a>
