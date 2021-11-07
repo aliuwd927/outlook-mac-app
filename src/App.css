@@ -57,3 +57,8 @@ a {
   width: 100%;
   gap: 5px;
 }
+.right_display_emailObj {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
